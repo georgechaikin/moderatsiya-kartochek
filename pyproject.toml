@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "moderatsiya-kartochek"
 version = "0.1.0"
-description = ""
+description = "Классификация изображений на предмет курения"
 authors = ["Georgii Chaikin <chaykin.georgiy217@gmail.com>"]
 readme = "README.md"
 
