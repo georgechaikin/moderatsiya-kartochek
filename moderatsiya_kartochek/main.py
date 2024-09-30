@@ -12,7 +12,7 @@ from moderatsiya_kartochek.model_processing import load_ov_model, predict_class
 @click.argument("data-dir", type=click.Path(dir_okay=True, exists=True))
 @click.argument("save-dir", type=click.Path(dir_okay=True, exists=True))
 @click.option("--threshold", type=float, default=0.4, help="Пороговое значение.")
-def make_submission(data_dir: str | os.PathLike, save_dir: str | os.PathLike, threshold: float=0.4) -> None:
+def make_submission(data_dir: str | os.PathLike, save_dir: str | os.PathLike, threshold: float = 0.4) -> None:
     """Сабмит результата в SAVE_DIR на основе изображений из DATA_DIR."""
     models_dir = Path(__file__).parent / "models"
     model_path = models_dir / "blip_image_classifier.xml"
